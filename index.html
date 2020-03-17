@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzeeMax Website</title>
+    <link rel="stylesheet" href="./dist/css/home.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header-left">
+            <img src="./images/EzeeMax Logo (2).png" alt="">
+        </div>
+        <div class="header-right">
+            <form class="form-inline" action="">
+                <input type="email" id="email" placeholder="Enter Email" name="email">
+                <input type="password" id="pwd" placeholder="Enter Password" name="pswd">
+                <label>
+                  <input type="checkbox" name="remember"> Remember me
+                </label>
+                <button type="submit">Sign In</button>
+              </form>
+              <span class="forgot-account"><a href="#">Forgot Account?</a></span>
+              <button class="sign-up-btn"onclick="document.getElementById('id01').style.display='block'" type="button">Sign In</button>
+              <div id="id01" class="modal">
+                <form class="modal-content animate" action="" method="">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./images/logo_ezeemax.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="modal-form-container">
+                    <label for="email"><b>Email</b></label>
+                    <input class="smallInput" type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input class="smallInput" type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button class="smallbtn" type="submit">Sign In</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="modal-form-container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+              
+              <button class="sign-up-btn" onclick="document.getElementById('id02').style.display='block'" type="button">Sign up</button>
+              <div id="id02" class="modal">
+                <form class="modal-content animate" action="" method="">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./images/logo_ezeemax.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="modal-form-container">
+                    <label for="username"><b>Username</b></label>
+                    <input class="smallInput" type="text" placeholder="Enter Username" name="username" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input class="smallInput" type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input class="smallInput" type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button class="smallbtn" type="submit">Sign Up</button>
+                    <label>
+                      By creating an account you agree to our <a href="#"> Terms & Privacy</a>.
+                    </label>
+                  </div>
+              
+                  <div class="modal-form-container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        <div class="section-one">
+          <h1>Welcome </h1>
+          <img src="./images/EzeeMax Logo (2).png" alt=""><img src="./images/EzeeMax Logo (2).png" alt=""><img src="./images/EzeeMax Logo (2).png" alt=""><img src="./images/EzeeMax Logo (2).png" alt=""><img src="./images/EzeeMax Logo (2).png" alt=""><img src="./images/EzeeMax Logo (2).png" alt="">
+        </div>
+        <div class="section-two">
+            <form action="#">
+                <div class="register-container">
+                  <h2>Sign Up</h2>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+              
+                  <label for="username"><b>Username</b></label>
+                  <input class="input-type" type="text" placeholder="Enter Username" name="email" required>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input class="input-type" type="email" placeholder="Enter Email" name="psw" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input class="input-type" type="password" placeholder="Enter Password" name="psw-repeat" required>
+                  <hr>
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>EzeeMax Learning &copy; || All rights reserved</p>
+        </div>
+      </div>
+      <script src="./dist/scripts/hscript.js"></script>
+</body>
+</html>
